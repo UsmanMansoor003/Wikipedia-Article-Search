@@ -1,0 +1,8 @@
+Django
+pathlib
+django.core
+django-cors-headers
+django.db
+pymongo
+urllib3
+djangorestframework

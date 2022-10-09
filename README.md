@@ -1,13 +1,5 @@
-# Wikipedia-Search-App
-* This project ties together Flask, Mongodb and Docker in a simple application. It load the wikipedia articles on the mongodb database and allow you to search word occurences in those articles while managing it all with docker-compose.
-
-
-### In order to load data into Database
-* To load data in mongoDB: http://127.0.0.1:5000/load
-
-### In order to Search from the Database 
-* To search keyword in article: http://127.0.0.1:5000/search/{Word to Search}
-
+# Wikipedia articles Search App
+This project ties together Flask, Mongodb and Docker in a simple application. It load the wikipedia articles on the mongodb database and allow you to search word occurences in those articles while managing it all with docker-compose.
 
 ## How to Run
 * make sure your system have Docker installed otherwise follow the instruction of setup and installation of docker from https://docs.docker.com/docker-for-windows/install/

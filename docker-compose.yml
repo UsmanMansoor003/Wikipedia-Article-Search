@@ -1,25 +1,14 @@
-version: "3.7"
-
-volumes:
-  mongodb_container:
-  app_container:
-
+version: '2'
 services:
-  mongodb_container:
-    image: mongo:latest
-    volumes:
-      - mongodb_container:/data/db
+  mongodb:
+    image: mongo
     ports:
       - 27017:27017
-
   web:
     build: .
-    command: flask --app search.py run
-    volumes:
-      - app_container:/home/app/webapp  
     ports:
       - "5000:5000"
-    links:
-      - mongodb_container
+    volumes:
+      - .:/code  
     depends_on:
-      - mongodb_container
+      - mongodb
